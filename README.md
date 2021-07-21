@@ -1,3 +1,3 @@
 # hookx
-![Alt Text](https://imgur.com/EoeuKQ1)
+![](https://imgur.com/EoeuKQ1)
 
