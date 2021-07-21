@@ -1,0 +1,19 @@
+{
+  "name": "hookx",
+  "version": "1.0.0",
+  "description": "프로그래밍 없이 웹후크를 전송할 수 있게 해주는 웹사이트입니다.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pii-dev/hookx.git"
+  },
+  "author": "pi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pii-dev/hookx/issues"
+  },
+  "homepage": "https://github.com/pii-dev/hookx#readme"
+}
