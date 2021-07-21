@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header id="titlebar">
+    <div id="drag-region">
+      <div id="window-controls">
+  
+        <div class="button" id="min-button">
+          <img class="icon"
+            srcset="icons/min-w-10.png 1x, icons/min-w-12.png 1.25x, icons/min-w-15.png 1.5x, icons/min-w-15.png 1.75x, icons/min-w-20.png 2x, icons/min-w-20.png 2.25x, icons/min-w-24.png 2.5x, icons/min-w-30.png 3x, icons/min-w-30.png 3.5x"
+            draggable="false" />
+        </div>
+  
+        <div class="button" id="max-button">
+          <img class="icon"
+            srcset="icons/max-w-10.png 1x, icons/max-w-12.png 1.25x, icons/max-w-15.png 1.5x, icons/max-w-15.png 1.75x, icons/max-w-20.png 2x, icons/max-w-20.png 2.25x, icons/max-w-24.png 2.5x, icons/max-w-30.png 3x, icons/max-w-30.png 3.5x"
+            draggable="false" />
+        </div>
+  
+        <div class="button" id="restore-button">
+          <img class="icon"
+            srcset="icons/restore-w-10.png 1x, icons/restore-w-12.png 1.25x, icons/restore-w-15.png 1.5x, icons/restore-w-15.png 1.75x, icons/restore-w-20.png 2x, icons/restore-w-20.png 2.25x, icons/restore-w-24.png 2.5x, icons/restore-w-30.png 3x, icons/restore-w-30.png 3.5x"
+            draggable="false" />
+        </div>
+  
+        <div class="button" id="close-button">
+          <img class="icon"
+            srcset="icons/close-w-10.png 1x, icons/close-w-12.png 1.25x, icons/close-w-15.png 1.5x, icons/close-w-15.png 1.75x, icons/close-w-20.png 2x, icons/close-w-20.png 2.25x, icons/close-w-24.png 2.5x, icons/close-w-30.png 3x, icons/close-w-30.png 3.5x"
+            draggable="false" />
+        </div>
+  
+      </div>
+    </div>
+  </header>
+<head>
+    <meta charset="UTF-8">
+    <title>HookX</title>
+    <link rel="stylesheet" href="textbox.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+    <link rel="shortcut icon" href="https://discord.com/assets/f8389ca1a741a115313bede9ac02e2c0.svg">
+    <meta name="google-site-verification" content="LwMu477sFkUbA9W7BWrPoQbVArjHIJzHLU6ybIiyCxg" />
+</head>
+
+<body>
+    <div class="container">
+        <img id="clip" src="hookx.png" />
+    
+      </div>
+<div class="input_group field">
+    <input type=url class="input_field" placeholder="url" id="webhook_url" required>
+    <label for="webhook_url" class="input_label">URL du webhook</label>
+</div>
+
+<div class="input_group field">
+    <input id="webhook_profile" type=url class="input_field" placeholder="url" onkeyup="getProfile();">
+    <label for="webhook_profile" class="input_label">URL de l'avatar</label>
+</div>
+
+<div class="input_group field">
+    <input type=text class="input_field" placeholder="name" id="webhook_name" onkeyup="getName();">
+    <label for="webhook_name" class="input_label">Nom</label>
+</div>
+
+<div class="textarea">
+    <label><textarea id="textarea" placeholder="Message" onkeyup="getText();"></textarea></label>
+</div>
+
+<p id="preview"></p>
+<div class="preview">
+    <div>
+        <img id="profile" src="yellowdiscord.jpg" alt="">
+        <a id="name">HookX</a>
+        <div id="bot">BOT</div>
+        <div id="time">
+            <script>getTime()</script>
+        </div>
+        <br>
+        <a id="text"></a>
+    </div>
+</div>
+
+<div class="buttons">
+    <div class="container">
+        <a onclick="send();" class="btn effect04" data-sm-link-text="Envoyer" target="_blank"><span>Envoyer</span></a>
+    </div>
+</div>
+<script>
+    require('./renderer.js')
+  </script>
+
+</body>
+</html>

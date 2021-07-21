@@ -1,0 +1,105 @@
+.input_group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 45%;
+}
+
+.input_field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid white;
+    outline: 0;
+    font-size: 1rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    transition: 0.2s;
+}
+.input_field::placeholder {
+    color: transparent;
+}
+.input_field:placeholder-shown ~ .input_label {
+    font-size: 1rem;
+    cursor: text;
+    top: 20px;
+}
+
+.input_label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 12px;
+    color: #ffefa9;
+}
+
+.input_field:focus {
+    padding-bottom: 6px;
+    color: white;
+    transition: 0.2s;
+    border-width: 3px;
+    border-image: linear-gradient(to right, white, white);
+    border-image-slice: 1;
+}
+.input_field:focus ~ .input_label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #ffe4c1;
+    
+    font-weight: 700;
+}
+
+/* reset input */
+.input_field:required, .input_field:invalid {
+    box-shadow: none;
+}
+
+textarea {
+    background-color: transparent;
+    color: #ffefa9;
+    font-family: KoPubWorld, sans-serif;
+    font-size: 1em !important;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #ffefa9;
+    border-radius: 10px;
+    min-height: 110px !important;
+    outline: none;
+    transition: 0.2s;
+    resize: none;
+    background: rgba(0,0,0,.5);
+
+}
+
+textarea::placeholder {
+    color: #ffefa9;
+    transition: 0.2s;
+}
+
+textarea:focus {
+    border: 1px solid #ffc272;
+    transition: 0.2s;
+    color: white;
+    background: rgba(0,0,0,.5);
+    box-shadow: 0 0 45px #ffc272;
+    transition: 0.5s;
+}
+
+textarea:focus::placeholder {
+    color: #ffc272;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.textarea {
+    position: relative;
+    margin-top: 50px;
+    left: -0.9%;
+    width: 42%;
+}
