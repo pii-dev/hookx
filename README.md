@@ -12,5 +12,13 @@
 
 • 🛠️ Made with Electron, CSS, HTML and JavaScript
 <br/>
+
+# Instructions
+
+**1** - Open CMD<br/>
+**2** - Enter this command : cd Desktop<br/>
+**3** - Enter this command : git clone <br/>
+**4** - Drag the HookX shortcut on your desktop<br/>
+**5** - Open HookX !<br/>
 # Interface Screenshots
 ![alt text](https://github.com/pii-dev/hookx/blob/main/HookX/md/screenhookx.png "Logo Title Text 1")
