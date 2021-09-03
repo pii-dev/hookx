@@ -13,12 +13,13 @@
 • 🛠️ Made with Electron, CSS, HTML and JavaScript
 <br/>
 
-# Instructions
+# Instructions in CMD
 
-**1** - Open CMD<br/>
-**2** - Enter this command : cd Desktop<br/>
-**3** - Enter this command : git clone <br/>
-**4** - Drag the HookX shortcut on your desktop<br/>
-**5** - Open HookX !<br/>
+git clone https://github.com/pii-dev/hookx.git
+cd hookx
+npm install -r requirements.txt
+
+# Windows
+Open the HookX shortcut, and enjoy zebi
 # Interface Screenshots
 ![alt text](https://github.com/pii-dev/hookx/blob/main/HookX/md/screenhookx.png "Logo Title Text 1")
